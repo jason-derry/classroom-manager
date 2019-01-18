@@ -17,8 +17,8 @@ public class TraineeEndpoint {
 	@Path("/json/{id}")
 	@GET
 	@Produces({ "application/json" })
-	public String getTraineesWithClasroomID(@PathParam("id") String id) {
-		return service.getTraineesWithClassroomID(id);
+	public String getTraineesWithClasroomID(@PathParam("id") int classroomID) {
+		return service.getTraineesWithClassroomID(classroomID);
 	}
 
 	public void setService(TraineeService service) {

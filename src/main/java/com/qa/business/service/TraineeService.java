@@ -2,7 +2,7 @@ package com.qa.business.service;
 
 public interface TraineeService {
 	
-	String getTraineesWithClassroomID(String classroomID);
+	String getTraineesWithClassroomID(int classroomID);
 
 	String addTrainee(String trainee);
 	

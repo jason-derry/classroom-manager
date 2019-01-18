@@ -11,7 +11,7 @@ public class Trainee {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
 	private Long id;
-	private String classroomID;
+	private int classroomID;
 	private String traineeID;
 	private String fullName;
 	
@@ -19,17 +19,17 @@ public class Trainee {
 		
 	}
 	
-	public Trainee(String classroomID, String traineeID, String fullName) {
+	public Trainee(int classroomID, String traineeID, String fullName) {
 		this.classroomID = classroomID;
 		this.traineeID = traineeID;
 		this.fullName = fullName;
 	}
 	
-	public String getClassroomID() {
+	public int getClassroomID() {
 		return classroomID;
 	}
 
-	public void setClassroomID(String classroomID) {
+	public void setClassroomID(int classroomID) {
 		this.classroomID = classroomID;
 	}
 	

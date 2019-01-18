@@ -10,7 +10,7 @@ public class TraineeServiceImpl implements TraineeService {
 	private TraineeRepository repo;
 
 	@Override
-	public String getTraineesWithClassroomID(String classroomID) {
+	public String getTraineesWithClassroomID(int classroomID) {
 		return repo.getTraineesWithClassroomID(classroomID);
 	}
 

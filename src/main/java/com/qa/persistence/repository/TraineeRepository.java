@@ -2,7 +2,7 @@ package com.qa.persistence.repository;
 
 public interface TraineeRepository {
 	
-	String getTraineesWithClassroomID(String classroomID);
+	String getTraineesWithClassroomID(int classroomID);
 
 	String addTrainee(String trainee);
 	
