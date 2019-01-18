@@ -13,14 +13,16 @@ public class Classroom {
 	private Long id;
 	private int classroomID;
 	private String trainerName;
+	private String trainees;
 	
 	public Classroom() {
 		
 	}
 	
-	public Classroom(int classroomID, String trainerName) {
+	public Classroom(int classroomID, String trainerName, String trainees) {
 		this.classroomID = classroomID;
 		this.trainerName = trainerName;
+		this.trainees = trainees;
 	}
 	
 	public int getClassroomID() {
@@ -39,4 +41,12 @@ public class Classroom {
 		this.trainerName = trainerName;
 	}
 
+	public String getTrainees() {
+		return trainees;
+	}
+
+	public void setTrainees(String trainees) {
+		this.trainees = trainees;
+	}
+	
 }

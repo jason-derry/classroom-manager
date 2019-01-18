@@ -9,7 +9,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
 import com.qa.persistence.domain.Classroom;
-import com.qa.persistence.domain.Trainee;
 import com.qa.util.JSONUtil;
 
 @Default
@@ -20,6 +19,7 @@ public class ClassroomDBRepository implements ClassroomRepository {
 	
 	@Inject
 	private JSONUtil util;
+	
 
 	@Override
 	public String getAllClassrooms() {
