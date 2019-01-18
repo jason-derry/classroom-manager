@@ -10,8 +10,8 @@ public class TraineeServiceImpl implements TraineeService {
 	private TraineeRepository repo;
 
 	@Override
-	public String getTraineesWithClassromID(String classroomID) {
-		return repo.getTraineesWithClassromID(classroomID);
+	public String getTraineesWithClassroomID(String classroomID) {
+		return repo.getTraineesWithClassroomID(classroomID);
 	}
 
 	@Override
