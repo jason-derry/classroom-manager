@@ -31,11 +31,11 @@ public class Classroom {
 		this.classroomID = classroomID;
 	}
 
-	public String gettrainerName() {
+	public String getTrainerName() {
 		return trainerName;
 	}
 
-	public void settrainerName(String trainerName) {
+	public void setTrainerName(String trainerName) {
 		this.trainerName = trainerName;
 	}
 
