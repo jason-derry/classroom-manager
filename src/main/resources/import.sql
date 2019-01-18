@@ -5,3 +5,5 @@ INSERT INTO TRAINEE (classroomID, traineeID, fullName) VALUES ('2', '4', 'Ceri B
 
 INSERT INTO CLASSROOM (classroomID, trainerName) VALUES ('1', 'John Gordon')
 INSERT INTO CLASSROOM (classroomID, trainerName) VALUES ('2', 'Matt Hunt')
+
+SELECT c.classroomID, c.trainerName, t.traineeID, t.fullName FROM Classroom c JOIN Trainee t ON c.classroomID = t.classroomID

@@ -23,7 +23,7 @@ public class ClassroomDBRepository implements ClassroomRepository {
 
 	@Override
 	public String getAllClassrooms() {
-		Query query = manager.createQuery("Select c FROM Classroom c");
+		Query query = manager.createQuery("Select c.classroomID, c.trainerName, t.traineeID, t.fullName FROM Classroom c JOIN c.trainees t WHERE c.classroomID = t.classroomID");
 		Collection<Classroom> result = (Collection<Classroom>) query.getResultList();
 		return util.getJSONForObject(result);
 	}
