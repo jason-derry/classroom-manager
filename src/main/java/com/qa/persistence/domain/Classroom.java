@@ -1,54 +1,42 @@
-//package com.qa.persistence.domain;
-//
-//import java.util.List;
-//
-//import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
-//
-//@Entity
-//public class Classroom {
-//	
-//	@GeneratedValue(strategy = GenerationType.IDENTITY)
-//	@Id
-//	private Long id;
-//	private String classroomID;
-//	private String fullName;
-//	private List<Trainee> traineeList;
-//	
-//	public Classroom() {
-//		
-//	}
-//	
-//	public Classroom(String classroomID, String fullName, List<Trainee> traineeList) {
-//		this.classroomID = classroomID;
-//		this.fullName = fullName;
-//		this.traineeList = traineeList;
-//	}
-//	
-//	public String getClassroomID() {
-//		return classroomID;
-//	}
-//
-//	public void setClassroomID(String classroomID) {
-//		this.classroomID = classroomID;
-//	}
-//
-//	public String getFullName() {
-//		return fullName;
-//	}
-//
-//	public void setFullName(String fullName) {
-//		this.fullName = fullName;
-//	}
-//
-//	public List<Trainee> getTraineeList() {
-//		return traineeList;
-//	}
-//
-//	public void setTrainee(List<Trainee> traineeList) {
-//		this.traineeList = traineeList;
-//	}
-//
-//}
+package com.qa.persistence.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Classroom {
+	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	private Long id;
+	private int classroomID;
+	private String trainerName;
+	
+	public Classroom() {
+		
+	}
+	
+	public Classroom(int classroomID, String trainerName) {
+		this.classroomID = classroomID;
+		this.trainerName = trainerName;
+	}
+	
+	public int getClassroomID() {
+		return classroomID;
+	}
+
+	public void setClassroomID(int classroomID) {
+		this.classroomID = classroomID;
+	}
+
+	public String gettrainerName() {
+		return trainerName;
+	}
+
+	public void settrainerName(String trainerName) {
+		this.trainerName = trainerName;
+	}
+
+}
