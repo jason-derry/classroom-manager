@@ -8,6 +8,6 @@ public interface TraineeRepository {
 	
 	String amendTrainee(Long id, String trainee);
 
-	String deleteAccount(Long id);
+	String removeTrainee(Long id);
 
 }
