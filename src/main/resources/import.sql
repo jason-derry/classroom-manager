@@ -1,3 +1,4 @@
-INSERT INTO ACCOUNT (firstName, lastName, accountNumber) VALUES ('John', 'Doe', '1234')
-INSERT INTO ACCOUNT (firstName, lastName, accountNumber) VALUES ('Jane', 'Doe', '1235')
-INSERT INTO ACCOUNT (firstName, lastName, accountNumber) VALUES ('Jim', 'Taylor', '1236')
+INSERT INTO TRAINEE (classroomID, traineeID, fullName) VALUES ('1', '1', 'Joe Bloggs')
+INSERT INTO TRAINEE (classroomID, traineeID, fullName) VALUES ('1', '2', 'Jane Bloggs')
+INSERT INTO TRAINEE (classroomID, traineeID, fullName) VALUES ('2', '3', 'David Bloggs')
+INSERT INTO TRAINEE (classroomID, traineeID, fullName) VALUES ('2', '4', 'Ceri Bloggs')
