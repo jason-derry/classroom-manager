@@ -27,7 +27,7 @@ public class TraineeDBRepository implements TraineeRepository {
 
 	@Override
 	public String getTraineesWithClassroomID(int classroomID) {
-		Query query = manager.createQuery("Select a FROM Trainee a WHERE a.classroomID = :classroomID");
+		Query query = manager.createQuery("Select t FROM Trainee t WHERE t.classroomID = :classroomID");
 		query.setParameter("classroomID", classroomID);
 		Collection<Trainee> result = (Collection<Trainee>) query.getResultList();
 		return util.getJSONForObject(result);
