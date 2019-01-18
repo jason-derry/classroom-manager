@@ -1,7 +1,5 @@
 package com.qa.persistence.domain;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,42 +11,32 @@ public class Classroom {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
 	private Long id;
-	private String classroomID;
-	private String fullName;
-	private List<Trainee> traineeList;
+	private int classroomID;
+	private String trainerName;
 	
 	public Classroom() {
 		
 	}
 	
-	public Classroom(String classroomID, String fullName, List<Trainee> traineeList) {
+	public Classroom(int classroomID, String trainerName) {
 		this.classroomID = classroomID;
-		this.fullName = fullName;
-		this.traineeList = traineeList;
+		this.trainerName = trainerName;
 	}
 	
-	public String getClassroomID() {
+	public int getClassroomID() {
 		return classroomID;
 	}
 
-	public void setClassroomID(String classroomID) {
+	public void setClassroomID(int classroomID) {
 		this.classroomID = classroomID;
 	}
 
-	public String getFullName() {
-		return fullName;
+	public String gettrainerName() {
+		return trainerName;
 	}
 
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
-	}
-
-	public List<Trainee> getTraineeList() {
-		return traineeList;
-	}
-
-	public void setTrainee(List<Trainee> traineeList) {
-		this.traineeList = traineeList;
+	public void settrainerName(String trainerName) {
+		this.trainerName = trainerName;
 	}
 
 }
