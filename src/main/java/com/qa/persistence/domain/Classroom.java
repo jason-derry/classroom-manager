@@ -1,14 +1,20 @@
 package com.qa.persistence.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "CLASSROOM")
 public class Classroom {
 	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,8 +22,12 @@ public class Classroom {
 	private Long id;
 	private int classroomID;
 	private String trainerName;
-	@OneToMany(mappedBy="classroom")
-    private List<Trainee> trainees;
+	@OneToMany(
+            cascade = CascadeType.ALL,
+            fetch = FetchType.EAGER
+    )
+    @JoinColumn(name = "classroomID")
+    private List<Trainee> trainee = new ArrayList<>();
 	
 	public Classroom() {
 		
